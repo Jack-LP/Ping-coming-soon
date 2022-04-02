@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <script src="./app.js" defer></script>
+    <title>Ping | Coming Soon</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="section-one">
+        <div class="logo-section">
+          <img src="/images/logo.svg" alt="Ping Logo" />
+          <h1>We are launching <span class="bold">soon!</span></h1>
+          <h2>Subscribe and get notified</h2>
+        </div>
+        <div class="email-section">
+          <form id="form" action="/">
+            <input
+              id="email-input"
+              class="email-input"
+              type="email"
+              placeholder="Your email address..."
+            />
+
+            <input
+              id="submit-btn"
+              class="submit-btn"
+              type="submit"
+              value="Notify Me"
+            />
+          </form>
+          <span id="error-msg" class="error-msg"></span>
+        </div>
+      </section>
+
+      <section class="section-two">
+        <img
+          src="./images/illustration-dashboard.png"
+          alt="Dashboard illustration"
+        />
+      </section>
+
+      <footer class="footer">
+        <div class="socials">
+          <button><i class="fa-brands fa-facebook-f"></i></button>
+          <button><i class="fa-brands fa-twitter"></i></button>
+          <button><i class="fa-brands fa-instagram"></i></button>
+        </div>
+        <div class="copy">&copy; Copyright Ping. All rights reserved.</div>
+      </footer>
+    </div>
+  </body>
+</html>

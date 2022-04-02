@@ -1,0 +1,200 @@
+@import 'variables';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: white;
+  font-family: $bodyFont;
+}
+
+.invalid {
+  border: 0.1rem solid $lightRed !important;
+}
+
+.error-msg {
+  color: $lightRed;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.container {
+  padding: 6rem 0;
+  width: min(75%, 70rem);
+  margin: 0 auto;
+  display: flex;
+  gap: 10rem;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.section-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+}
+
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  img {
+    height: auto;
+    width: 6rem;
+    padding-bottom: 2rem;
+  }
+  h1 {
+    font-size: 2.3rem;
+    color: $grey;
+    font-weight: $lightWeight;
+  }
+  .bold {
+    color: $veryDarkBlue;
+    font-weight: $heavyWeight;
+  }
+  h2 {
+    color: $veryDarkBlue;
+    font-weight: $lightWeight;
+  }
+}
+
+.email-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  input {
+    border: none;
+    outline: none;
+    border-radius: 10rem;
+    font-family: $bodyFont;
+    padding: 1.4rem;
+  }
+  .email-input {
+    border: 0.1rem solid $paleBlue;
+    padding-left: 3rem;
+    color: $paleBlue;
+  }
+  .submit-btn {
+    background-color: $blue;
+    color: white;
+    cursor: pointer;
+    font-weight: $medWeight;
+    -webkit-box-shadow: 0px 1px 25px 4px rgba(79, 125, 243, 0.18);
+    box-shadow: 0px 1px 25px 4px rgba(79, 125, 243, 0.18);
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: auto;
+}
+
+.socials {
+  display: flex;
+  gap: 2rem;
+  i {
+    font-size: 2rem;
+    color: $blue;
+    border-radius: 50%;
+    transition: all 0.2s;
+  }
+  button {
+    transition: all 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    outline: none;
+    border: 0.1rem solid $paleBlue;
+    background-color: transparent;
+    cursor: pointer;
+    &:hover {
+      background-color: $blue;
+      i {
+        color: white;
+      }
+    }
+  }
+}
+
+.copy {
+  font-size: 1.2rem;
+  color: $grey;
+}
+
+@media screen and (min-width: 700px) {
+  .error-msg {
+    text-align: left;
+    padding-left: 3rem;
+  }
+  .container {
+    gap: 4rem;
+  }
+  .logo-section {
+    gap: 2rem;
+    img {
+      width: 10rem;
+    }
+    h1 {
+      font-size: 5rem;
+    }
+    h2 {
+      font-size: 2.3rem;
+    }
+  }
+  .email-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    form {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+    }
+    input {
+      padding: 1.5rem;
+    }
+    .email-input {
+      width: 70%;
+    }
+    .submit-btn {
+      width: 30%;
+    }
+  }
+  .section-two {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 80rem;
+    }
+  }
+}
