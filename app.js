@@ -15,3 +15,4 @@ function validation() {
 
 const emailInput = document.getElementById('email-input');
 emailInput.addEventListener('keydown', validation);
+// tt
